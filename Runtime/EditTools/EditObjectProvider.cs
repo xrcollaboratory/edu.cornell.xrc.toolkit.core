@@ -14,7 +14,7 @@ namespace XRC.Core
     public class EditObjectProvider : MonoBehaviour 
     {
         [SerializeField]
-        private XRBaseInteractor m_Interactor;
+        private UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor m_Interactor;
 
         [SerializeField]
         private bool m_SnapBack = true;
@@ -37,14 +37,14 @@ namespace XRC.Core
         private IEditTool m_EditTool;
         private Vector3 m_InitialPosition;
         private Quaternion m_InitialRotation;
-        private IXRSelectInteractable m_Interactable;
+        private UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable m_Interactable;
         private bool m_IsRunning;
         
         
         /// <summary>
         /// The interactor responsible for selecting the object to be interested.
         /// </summary>
-        public XRBaseInteractor interactor
+        public UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor interactor
         {
             get => m_Interactor;
             set => m_Interactor = value;
@@ -142,7 +142,7 @@ namespace XRC.Core
                 // Deselect the object and disable the interactable so it can't be selected while the object is a target object
                 m_Interactor.interactionManager.CancelInteractableSelection(m_Interactable);
                 
-                ((XRGrabInteractable)m_Interactable).enabled = false;
+                ((UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable)m_Interactable).enabled = false;
                 
                 if (m_SnapBack)
                 {
@@ -177,7 +177,7 @@ namespace XRC.Core
                     
                 if (m_StartEditOnSet)
                 {
-                    m_EditObject.GetComponent<XRGrabInteractable>().enabled = false;
+                    m_EditObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>().enabled = false;
                     m_EditTool.StartRun();
                 }
                 
@@ -196,7 +196,7 @@ namespace XRC.Core
             {
                 return;
             }
-            m_EditObject.GetComponent<XRGrabInteractable>().enabled = true;
+            m_EditObject.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>().enabled = true;
             m_EditTool.StopRun();
         }
 
