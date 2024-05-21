@@ -2772,10 +2772,7 @@ MonoBehaviour:
   m_StartingGroupMembers:
   - {fileID: 0}
   - {fileID: 0}
-  m_StartingInteractionOverridesMap:
-  - groupMember: {fileID: 0}
-    overrideGroupMembers:
-    - {fileID: 0}
+  m_StartingInteractionOverridesMap: []
 --- !u!114 &2448475238147693148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4641,10 +4638,7 @@ MonoBehaviour:
   m_StartingGroupMembers:
   - {fileID: 0}
   - {fileID: 0}
-  m_StartingInteractionOverridesMap:
-  - groupMember: {fileID: 0}
-    overrideGroupMembers:
-    - {fileID: 0}
+  m_StartingInteractionOverridesMap: []
 --- !u!1 &8086062655274160489
 GameObject:
   m_ObjectHideFlags: 0
