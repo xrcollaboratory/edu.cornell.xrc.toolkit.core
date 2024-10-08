@@ -1,17 +1,17 @@
 {
-	"name": "edu.cornell.xrc.core",
-	"version": "0.1.4",
+	"name": "edu.cornell.xrc.toolkit.core",
+	"version": "0.2.0",
 	"displayName": "XRC Core",
 	"description": "A collection of core utility scripts and starter assets to be used by XR Collaboratory.",
-	"unity": "2022.3",
-	"unityRelease": "7f1",
+	"unity": "6000.0",
+	"unityRelease": "16f1",
 	"dependencies": {
-		"com.unity.inputsystem": "1.6.3",
-		"com.unity.xr.interaction.toolkit": "2.4.3"
+		"com.unity.inputsystem": "1.9.0",
+		"com.unity.xr.interaction.toolkit": "3.0.5"
 	},
-	"documentationUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.core/",
-	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.core/changelog/CHANGELOG.html",
-	"licensesUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.core/license/LICENSE.html",
+	"documentationUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
+	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/changelog/CHANGELOG.html",
+	"licensesUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/license/LICENSE.html",
 	"keywords": [
 		"XRC",
 		"XR Collaboratory"

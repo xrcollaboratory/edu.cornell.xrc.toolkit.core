@@ -84,7 +84,7 @@
             }
         ],
         "sitemap": {
-            "baseUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.core/",
+            "baseUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {
