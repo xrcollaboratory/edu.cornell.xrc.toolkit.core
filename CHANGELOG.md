@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.2.0] - 2024-10-31
+
+### Changed
+- Updated XR Interaction Toolkit to 3.0.
+- Changed rendering pipeline for sample to URP.
+
 ## [0.1.4] - 2024-02-15
 
 ### Added

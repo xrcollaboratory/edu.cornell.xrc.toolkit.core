@@ -13,7 +13,7 @@ The XRC Core package is a utility package that serves as the foundation for othe
 To install this package, follow these steps:
 1. In the Unity Editor, click on Window > Package Manager
 2. Click the + button and choose **Add package from git URL** option
-3. Paste this URL https://github.com/xrcollaboratory/edu.cornell.xrc.core.git in the prompt and click on Add
+3. Paste this URL https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core in the prompt and click on Add
 4. If the package is private you might have to authenticate, if you have been granted access to this package
 5. The package should be installed into your project
 6. You can download Samples from under **Samples** in Package Manager
@@ -21,7 +21,7 @@ To install this package, follow these steps:
 ## Requirements	
 <!-- This is a good place to add hardware or software requirements, including which versions of the Unity Editor this package is compatible with. -->
 
-This package has been tested using Unity Editor 2022.3.7f1 (LTS).
+This package has been tested using Unity Editor 6000.0.16f1.
 
 Dependencies: XR Interaction Toolkit, Input System.
 

@@ -24,8 +24,8 @@
             "_appFooter": "XR Collaboratory",
             "_enableSearch": true,
             "_disableContribution": true,
-            "_appLogoPath": "images/logo.svg",
-            "_appFaviconPath": "images/logo.ico"
+            "_appLogoPath": "images/logo/logo.svg",
+            "_appFaviconPath": "images/logo/logo.ico"
         },
         "content": [
             {
