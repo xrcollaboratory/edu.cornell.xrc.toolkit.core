@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-namespace XRC.Core
+namespace XRC.Toolkit.Core
 {
     /// <summary>
     /// The EditObjectProvider is designed to be used in conjunction with edit tools that implement the
