@@ -3,7 +3,7 @@
 ## Overview
    
 <!--  Provide a brief, high-level explanation of the package.-->
-The XRC Core package is a utility package that serves as the foundation for other XRC packages. It provides XRC developers with a core set of tools to streamline the creation of applications, by simplifying the development process and accelerating iteration cycles.
+The XRC Core package is a utility package that serves as the foundation for other XRC packages.
 
 
 
