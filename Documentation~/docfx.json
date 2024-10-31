@@ -20,7 +20,7 @@
     ],
     "build": {
         "globalMetadata": {
-            "_appTitle": "XRC Core",
+            "_appTitle": "XRC Toolkit",
             "_appFooter": "XR Collaboratory",
             "_enableSearch": true,
             "_disableContribution": true,
