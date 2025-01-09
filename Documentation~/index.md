@@ -11,6 +11,7 @@ A collection of core utility scripts and starter assets to be used by XR Collabo
 * Name: edu.cornell.xrc.toolkit.core
 * Display name: XRC Core
 * Version: 0.2.0
+* [Git URL](https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git)
 
 ### Requirements
 
