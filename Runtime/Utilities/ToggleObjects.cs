@@ -13,9 +13,26 @@ namespace XRC.Toolkit.Core.Utilities
     {
         [SerializeField]
         List<GameObject> m_ToggleObjects = new List<GameObject>();
-
+        /// <summary>
+        /// List of game objects to be toggled.
+        /// </summary>
+        public List<GameObject> toggleObjects
+        {
+            get => m_ToggleObjects;
+            set => m_ToggleObjects = value;
+        }
+        
         [SerializeField]
         private InputActionProperty m_ToggleAction;
+        /// <summary>
+        /// Input action used for toggling the associated game object.
+        /// </summary>
+        public InputActionProperty toggleAction
+        {
+            get => m_ToggleAction;
+            set => m_ToggleAction = value;
+        }
+
 
         void Start()
         {
