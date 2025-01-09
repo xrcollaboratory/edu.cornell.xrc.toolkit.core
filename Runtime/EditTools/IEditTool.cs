@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace XRC.Core
+namespace XRC.Toolkit.Core
 {
     /// <summary>
     /// An interface to be implemented by edit tools that require an object to edit.

@@ -1,6 +1,6 @@
 using System;
 
-namespace XRC.Core
+namespace XRC.Toolkit.Core
 {
     /// <summary>
     /// Interface to be implemented by components, such as edit tools and interaction techniques, that have a distinct run condition.

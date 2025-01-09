@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-namespace XRC.Core
+namespace XRC.Toolkit.Core
 {
     /// <summary>
     /// The EditObjectProvider is designed to be used in conjunction with edit tools that implement the
@@ -149,8 +149,11 @@ namespace XRC.Core
                 if (m_SnapBack)
                 {
                     // Move object back to its grabbed position and orientation
-                    m_EditObject.transform.position = m_InitialPosition;
-                    m_EditObject.transform.rotation = m_InitialRotation;
+                    // m_EditObject.transform.position = m_InitialPosition;
+                    // m_EditObject.transform.rotation = m_InitialRotation;
+                    
+                    m_EditObject.transform.position = m_Interactable.GetAttachPoseOnSelect(m_Interactor).position;
+                    m_EditObject.transform.rotation = m_Interactable.GetAttachPoseOnSelect(m_Interactor).rotation;
                 }
                 
                 if(m_EditTool == null)

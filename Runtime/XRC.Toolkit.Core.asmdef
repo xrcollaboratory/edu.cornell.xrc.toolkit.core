@@ -1,0 +1,17 @@
+{
+    "name": "XRC.Toolkit.Core",
+    "rootNamespace": "XRC.Toolkit.Core",
+    "references": [
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
