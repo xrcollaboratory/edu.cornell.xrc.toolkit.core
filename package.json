@@ -4,7 +4,6 @@
 	"displayName": "XRC Core",
 	"description": "A collection of core utility scripts and starter assets to be used by XR Collaboratory.",
 	"unity": "6000.0",
-	"unityRelease": "16f1",
 	"dependencies": {
 		"com.unity.inputsystem": "1.11.2",
 		"com.unity.xr.interaction.toolkit": "3.0.7"
@@ -13,17 +12,22 @@
 	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/changelog/CHANGELOG.html",
 	"licensesUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/license/LICENSE.html",
 	"keywords": [
-		"XRC",
-		"XR Collaboratory"
+		"XRC Toolkit",
+		"XR Collaboratory",
+		"XRC"
 	],
 	"author": {
 		"name": "XR Collaboratory"
+	},
+	"repository": {
+		"url": "https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git",
+		"type": "git"
 	},
 
 	"samples": [
 		{
 			"displayName": "XRC Starter Assets",
-			"description": "A simple scene showcasing the use of the XRC Starter Assets. This includes the PoseMarker and PlayArea prefabs.",
+			"description": "A simple scene showcasing the use of the XRC Starter Assets.",
 			"path": "Samples~/XRC Starter Assets"
 		}
 	]
