@@ -1,2 +1,6 @@
-- name: Instructions
+- name: Overview
   href: ../index.md
+- name: Components
+  href: components.md
+- name: Samples
+  href: Samples.md

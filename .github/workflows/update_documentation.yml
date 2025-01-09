@@ -1,0 +1,41 @@
+name: Update Documentation
+on:
+  workflow_dispatch:
+  push:
+permissions:
+  contents: write
+concurrency:
+  group: documentation
+  cancel-in-progress: true
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Generate Documentation
+      - name: Generate Documentation
+        run: |
+          node .github/scripts/update_components.js
+          node .github/scripts/update_docfx.js
+          node .github/scripts/update_overview.js
+          node .github/scripts/update_samples.js
+      # Commit documentation changes
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add Documentation~/manual/components.md
+          git add Documentation~/docfx.json
+          git add Documentation~/index.md
+          git add Documentation~/manual/samples.md
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: Update documentation"
+            git push
+          fi
