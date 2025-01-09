@@ -6,8 +6,8 @@
 	"unity": "6000.0",
 	"unityRelease": "16f1",
 	"dependencies": {
-		"com.unity.inputsystem": "1.9.0",
-		"com.unity.xr.interaction.toolkit": "3.0.5"
+		"com.unity.inputsystem": "1.11.2",
+		"com.unity.xr.interaction.toolkit": "3.0.7"
 	},
 	"documentationUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
 	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/changelog/CHANGELOG.html",
