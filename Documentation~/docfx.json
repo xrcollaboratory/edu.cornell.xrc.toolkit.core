@@ -20,7 +20,7 @@
     ],
     "build": {
         "globalMetadata": {
-            "_appTitle": "XRC Toolkit",
+            "_appTitle": "XRC Core",
             "_appFooter": "XR Collaboratory",
             "_enableSearch": true,
             "_disableContribution": true,
@@ -40,8 +40,7 @@
                     "*.yml"
                 ],
                 "dest": "api"
-            }
-            ,
+            },
             {
                 "src": "manual",
                 "files": [
@@ -66,7 +65,6 @@
                 ],
                 "dest": "license"
             }
-            
         ],
         "overwrite": [
             {
