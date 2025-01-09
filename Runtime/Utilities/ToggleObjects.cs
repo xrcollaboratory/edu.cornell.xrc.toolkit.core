@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,7 +11,7 @@ namespace XRC.Toolkit.Core.Utilities
     public class ToggleObjects : MonoBehaviour
     {
         [SerializeField]
-        List<GameObject> m_ToggleObjects = new List<GameObject>();
+        private List<GameObject> m_ToggleObjects = new List<GameObject>();
         /// <summary>
         /// List of game objects to be toggled.
         /// </summary>
