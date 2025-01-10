@@ -23,7 +23,9 @@
 		"url": "https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git",
 		"type": "git"
 	},
-
+	"xrcToolkit": {
+		"includeInOverview": true
+	},
 	"samples": [
 		{
 			"displayName": "XRC Starter Assets",
