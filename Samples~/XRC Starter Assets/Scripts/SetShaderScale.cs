@@ -21,8 +21,11 @@ namespace XRC.Toolkit.Core.Samples
         // Update is called once per frame
         void Update()
         {
-            var scale = m_ScaleTransform.localScale.x;
-            m_Material.SetFloat("_Scale", scale);
+            if (m_ScaleTransform)
+            {
+                var scale = m_ScaleTransform.localScale.x;
+                m_Material.SetFloat("_Scale", scale);
+            }
         }
     }
 }

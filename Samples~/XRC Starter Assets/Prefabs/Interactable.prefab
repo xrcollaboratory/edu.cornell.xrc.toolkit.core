@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2813535901283286280}
+  - {fileID: 5243450106120974667}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 21.1, y: 117.9, z: 0}
 --- !u!33 &9198918616518957915
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 537277d2382ccbf449b4bd18c759f052, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!1001 &8523306643188607798
+--- !u!1001 &1839451970195466101
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -268,10 +268,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8857088398262847116}
     m_Modifications:
-    - target: {fileID: 5855649031907677758, guid: a3b3bafafc157ae409a863919286e94e, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5855649031907677758, guid: a3b3bafafc157ae409a863919286e94e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -314,15 +310,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5855649031907677761, guid: a3b3bafafc157ae409a863919286e94e, type: 3}
       propertyPath: m_Name
-      value: PoseMarker
+      value: Axes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b3bafafc157ae409a863919286e94e, type: 3}
---- !u!4 &2813535901283286280 stripped
+--- !u!4 &5243450106120974667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5855649031907677758, guid: a3b3bafafc157ae409a863919286e94e, type: 3}
-  m_PrefabInstance: {fileID: 8523306643188607798}
+  m_PrefabInstance: {fileID: 1839451970195466101}
   m_PrefabAsset: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6147876202478821598}
   - component: {fileID: 6324087031064658796}
   m_Layer: 0
-  m_Name: Text West
+  m_Name: Text Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a6bd0a776c0a4f936e06b50c6a187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Transform: {fileID: 0}
+  m_ScaleTransform: {fileID: 0}
 --- !u!1 &5477478325710526391
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6884229230216068927}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: Base Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 856486027930490675}
   - component: {fileID: 6242966537030822257}
   m_Layer: 0
-  m_Name: Text South
+  m_Name: Text Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 5725443647637957082}
   - component: {fileID: 6250781624954666703}
   m_Layer: 0
-  m_Name: Text North
+  m_Name: Text Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 277252369646681617}
   - component: {fileID: 2186746268131323651}
   m_Layer: 0
-  m_Name: Text East
+  m_Name: Text Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,4 +1,5 @@
-Shader "Unlit/Grid"
+Shader "XR Collaboratory/Grid"
+// Based on a shader found in Unity's VR template
 {
     Properties
     {
