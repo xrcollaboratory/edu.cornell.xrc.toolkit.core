@@ -2,19 +2,6 @@
 
 This document lists all MonoBehaviour components in the package.
 
-## Edit Object Provider
-
-The EditObjectProvider is designed to be used in conjunction with edit tools that implement the IEditTool interface. It's primarily used in tools such as XRC Mesh Tool, XRC Scale Tool, and XRC Color Tool. The main functionality of this component is to provide these tools with the GameObject that needs to be edited.
-
-| Property | Description |
-|----------|-------------|
-| **Interactor** | The interactor responsible for selecting the object to be interested. |
-| **Snap Back** | *No description provided* |
-| **Start Edit On Set** | *No description provided* |
-| **Toggle On Cancel** | *No description provided* |
-| **Set Edit Object** | *No description provided* |
-| **Edit Object** | The object being edited. Anytime this property is set, the editObject of the EditTool is also set. |
-
 ## Toggle Objects
 
 Simple script for toggling game objects based on user input. Used for enabling and disabling UIs etc.
