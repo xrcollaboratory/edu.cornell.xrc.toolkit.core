@@ -2,7 +2,7 @@
 	"name": "edu.cornell.xrc.toolkit.core",
 	"version": "0.2.0",
 	"displayName": "XRC Core",
-	"description": "A collection of core utility scripts and starter assets to be used by XR Collaboratory.",
+	"description": "A collection of starter assets and core utility scripts used across XRC Toolkit packages.",
 	"unity": "6000.0",
 	"dependencies": {
 		"com.unity.inputsystem": "1.11.2",
