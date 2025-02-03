@@ -2,7 +2,7 @@
 
 ![edu.cornell.xrc.toolkit.core](images/overview/edu.cornell.xrc.toolkit.core.png)
 
-A collection of core utility scripts and starter assets to be used by XR Collaboratory.
+A collection of starter assets and core utility scripts used across XRC Toolkit packages.
 
 ## Technical details
 
