@@ -1,12 +1,12 @@
 {
 	"name": "edu.cornell.xrc.toolkit.core",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"displayName": "XRC Core",
 	"description": "A collection of starter assets and core utility scripts used across XRC Toolkit packages.",
-	"unity": "6000.0",
+	"unity": "6000.1",
 	"dependencies": {
-		"com.unity.inputsystem": "1.11.2",
-		"com.unity.xr.interaction.toolkit": "3.0.7"
+		"com.unity.inputsystem": "1.14.0",
+		"com.unity.xr.interaction.toolkit": "3.2.0"
 	},
 	"documentationUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
 	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/changelog/CHANGELOG.html",
@@ -29,7 +29,7 @@
 	"samples": [
 		{
 			"displayName": "XRC Starter Assets",
-			"description": "A simple scene showcasing the use of the XRC Starter Assets.",
+			"description": "A simple scene showcasing the use of the XRC Starter Assets. Useful items such as scenes and prefabs can be found in this sample.",
 			"path": "Samples~/XRC Starter Assets"
 		}
 	]

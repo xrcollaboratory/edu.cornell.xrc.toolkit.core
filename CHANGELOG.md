@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.2.1] - 2025-07-09
+
+### Added
+- Added scriptable object `XRCKey` to be used for storing third party API keys. All created keys should then be stored in a location ignored by git.
+
 ## [0.2.0] - 2024-10-31
 
 ### Changed
