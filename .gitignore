@@ -2,6 +2,10 @@
 # For Unity projects: Place this file at the root of your Unity project directory.
 # For Unity packages: Place this file at the root of your package directory.
 
+# Ignore XRCIgnore folders at any level and their .meta files
+**/XRCIgnore/
+**/XRCIgnore.meta
+
 ##########################
 ### For Unity packages ###
 ##########################
