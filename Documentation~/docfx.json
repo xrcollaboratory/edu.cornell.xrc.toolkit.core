@@ -19,8 +19,12 @@
         }
     ],
     "build": {
+        "template": [
+            "default",
+            "templates/xrc"
+        ],
         "globalMetadata": {
-            "_appTitle": "XRC Core",
+            "_appTitle": "XRC Package Template",
             "_appFooter": "XR Collaboratory",
             "_enableSearch": true,
             "_disableContribution": true,
@@ -45,7 +49,9 @@
                 "src": "manual",
                 "files": [
                     "toc.yml",
-                    "*.md"
+                    "*.md",
+                    "**/*.md",
+                    "**/*.yml"
                 ],
                 "dest": "manual"
             },
@@ -79,10 +85,15 @@
                 "files": [
                     "images/**/*"
                 ]
+            },
+            {
+                "files": [
+                    "templates/xrc/styles/*"
+                ]
             }
         ],
         "sitemap": {
-            "baseUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
+            "baseUrl": "https://xrcollaboratory.github.io/xrc-package-template/",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {
@@ -91,7 +102,7 @@
             }
         },
         "xref": [
-            "https://normanderwan.github.io/UnityXrefMaps/2022.3/xrefmap.yml"
+            "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
         ],
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"

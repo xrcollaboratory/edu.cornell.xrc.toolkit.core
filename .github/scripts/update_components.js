@@ -1,4 +1,4 @@
-﻿const fs = require("fs");
+const fs = require("fs");
 const path = require("path");
 
 function convertXmlToMarkdown(text) {
@@ -79,8 +79,10 @@ function formatFieldName(fieldName) {
 function findPropertySummary(content, propertyName) {
     console.log(`Looking for property summary: ${propertyName}`);
 
-    // First find the property declaration
-    const propertyPattern = new RegExp(`public\\s+[^\\n]+?\\s+${propertyName}\\s*{[^}]*}`);
+    // Updated pattern to handle both styles:
+    // 1. Block properties: public string Property { get; set; }
+    // 2. Expression-bodied properties: public string Property => field;
+    const propertyPattern = new RegExp(`public\\s+[^\\n]+?\\s+${propertyName}\\s*(?:{[^}]*}|=>[^;]+;)`);
     const propertyMatch = propertyPattern.exec(content);
 
     if (propertyMatch) {

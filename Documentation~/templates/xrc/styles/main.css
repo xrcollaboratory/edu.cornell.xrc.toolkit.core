@@ -1,0 +1,57 @@
+/* Ensure right sidebar (affix) is visible */
+.sideaffix {
+    display: block !important;
+}
+
+/* Improve heading hierarchy indentation in right sidebar */
+.affix ul ul {
+    padding-left: 10px;
+}
+
+.affix ul ul ul {
+    padding-left: 20px;
+}
+
+.affix ul ul ul ul {
+    padding-left: 30px;
+}
+
+.affix ul ul ul ul ul {
+    padding-left: 40px;
+}
+
+.affix ul ul ul ul ul ul {
+    padding-left: 50px;
+}
+
+/* Ensure Mermaid diagrams are centered */
+.mermaid {
+    text-align: center;
+}
+
+/* Make header background black */
+.navbar-inverse {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+/* Update navbar text colors for black background */
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+}
+
+/* Update navbar toggle button for black background */
+.navbar-inverse .navbar-toggle {
+    border-color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+}
