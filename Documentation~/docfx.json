@@ -24,7 +24,7 @@
             "templates/xrc"
         ],
         "globalMetadata": {
-            "_appTitle": "XRC Package Template",
+            "_appTitle": "XRC Core",
             "_appFooter": "XR Collaboratory",
             "_enableSearch": true,
             "_disableContribution": true,
@@ -93,7 +93,7 @@
             }
         ],
         "sitemap": {
-            "baseUrl": "https://xrcollaboratory.github.io/xrc-package-template/",
+            "baseUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {
