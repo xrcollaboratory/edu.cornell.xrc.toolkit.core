@@ -2,6 +2,17 @@
 
 This document lists all MonoBehaviour components in the package.
 
+## Edit Object Provider
+
+Provides object selection management for editing operations. Tracks grabbed objects, saves their initial positions for snap-back, and coordinates with IEditTool implementations to ensure proper initialization order (snap-back → set object → fire events → start tool).
+
+| Property | Description |
+|----------|-------------|
+| **Interactor** | *No description provided* |
+| **Edit Tool Object** | *No description provided* |
+| **Start Edit On Set** | *No description provided* |
+| **Snap Back On Edit Mode** | *No description provided* |
+
 ## Toggle Objects
 
 Simple script for toggling game objects based on user input. Used for enabling and disabling UIs etc.
