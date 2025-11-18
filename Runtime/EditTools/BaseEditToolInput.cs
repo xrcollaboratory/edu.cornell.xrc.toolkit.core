@@ -13,12 +13,12 @@ namespace XRC.Toolkit.Core
     /// This class provides automatic routing logic that adapts to two setup configurations:
     /// </para>
     /// <para>
-    /// <b>Without EditObjectProvider:</b> Input actions route directly to IEditTool.StartRun()/StopRun().
+    /// <b>Without EditObjectProvider:</b> Input actions route directly to IEditTool.EnterEditMode()/ExitEditMode().
     /// Edit object must be assigned manually in inspector. No snap-back or grab management.
     /// </para>
     /// <para>
-    /// <b>With EditObjectProvider:</b> Input actions route to EditObjectProvider.StartRun()/StopRun(),
-    /// which handles snap-back, grab disabling, and then calls IEditTool.StartRun()/StopRun().
+    /// <b>With EditObjectProvider:</b> Input actions route to EditObjectProvider.EnterEditMode()/ExitEditMode(),
+    /// which handles snap-back, grab disabling, and then calls IEditTool.EnterEditMode()/ExitEditMode().
     /// Edit object is set automatically when grabbed.
     /// </para>
     /// <para>
@@ -135,11 +135,11 @@ namespace XRC.Toolkit.Core
         {
             if (m_EditObjectProvider != null)
             {
-                m_EditObjectProvider.ToggleRun();
+                m_EditObjectProvider.ToggleEditMode();
             }
             else
             {
-                m_EditTool?.ToggleRun();
+                m_EditTool?.ToggleEditMode();
             }
         }
 
@@ -151,11 +151,11 @@ namespace XRC.Toolkit.Core
         {
             if (m_EditObjectProvider != null)
             {
-                m_EditObjectProvider.StartRun();
+                m_EditObjectProvider.EnterEditMode();
             }
             else
             {
-                m_EditTool?.StartRun();
+                m_EditTool?.EnterEditMode();
             }
         }
 
@@ -167,11 +167,11 @@ namespace XRC.Toolkit.Core
         {
             if (m_EditObjectProvider != null)
             {
-                m_EditObjectProvider.StopRun();
+                m_EditObjectProvider.ExitEditMode();
             }
             else
             {
-                m_EditTool?.StopRun();
+                m_EditTool?.ExitEditMode();
             }
         }
     }

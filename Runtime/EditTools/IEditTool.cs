@@ -9,10 +9,10 @@ namespace XRC.Toolkit.Core
     /// </summary>
     /// <remarks>
     /// <para>
-    /// This interface extends <see cref="IRunnable"/> to integrate with the XRC Toolkit's
-    /// standard run state management pattern. The <see cref="IRunnable.isRunning"/> property
-    /// indicates whether the tool is in edit mode, and <see cref="IRunnable.StartRun"/> /
-    /// <see cref="IRunnable.StopRun"/> methods control entering and exiting edit mode.
+    /// This interface provides edit-mode-specific methods for entering and exiting edit mode.
+    /// The <see cref="isInEditMode"/> property indicates whether the tool is actively editing,
+    /// and <see cref="EnterEditMode"/> / <see cref="ExitEditMode"/> methods control the
+    /// edit mode lifecycle.
     /// </para>
     /// <para>
     /// This interface enables dependency inversion where object selection providers
@@ -24,7 +24,7 @@ namespace XRC.Toolkit.Core
     /// Example implementations: XRC Mesh Tool, XRC Scale Tool, XRC Color Tool.
     /// </para>
     /// </remarks>
-    public interface IEditTool : IRunnable
+    public interface IEditTool
     {
         /// <summary>
         /// The object currently being edited by this tool.
@@ -46,10 +46,6 @@ namespace XRC.Toolkit.Core
         /// When true, the tool is actively editing the target object.
         /// When false, the tool is in normal interaction mode.
         /// </summary>
-        /// <remarks>
-        /// This property typically returns the same value as <see cref="IRunnable.isRunning"/>.
-        /// It exists as a semantic alias to make edit tool code more readable.
-        /// </remarks>
         bool isInEditMode { get; }
 
         /// <summary>
@@ -71,5 +67,23 @@ namespace XRC.Toolkit.Core
         /// </list>
         /// </remarks>
         void OnEditObjectChanging(GameObject newObject);
+
+        /// <summary>
+        /// Enters edit mode for the current edit object.
+        /// Sets <see cref="isInEditMode"/> to true and activates edit-specific functionality.
+        /// </summary>
+        void EnterEditMode();
+
+        /// <summary>
+        /// Exits edit mode for the current edit object.
+        /// Sets <see cref="isInEditMode"/> to false and deactivates edit-specific functionality.
+        /// </summary>
+        void ExitEditMode();
+
+        /// <summary>
+        /// Toggles edit mode on or off.
+        /// Calls <see cref="ExitEditMode"/> if currently in edit mode, otherwise calls <see cref="EnterEditMode"/>.
+        /// </summary>
+        void ToggleEditMode();
     }
 }

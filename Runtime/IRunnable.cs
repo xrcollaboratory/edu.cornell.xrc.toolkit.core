@@ -32,6 +32,5 @@ namespace XRC.Toolkit.Core
         /// </summary>
         public void ToggleRun();
 
-
     }
 }

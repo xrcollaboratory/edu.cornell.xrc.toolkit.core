@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace XRC.Toolkit.Core.Utilities
+namespace XRC.Toolkit.Core
 {
     /// <summary>
     /// Simple script for toggling game objects based on user input.

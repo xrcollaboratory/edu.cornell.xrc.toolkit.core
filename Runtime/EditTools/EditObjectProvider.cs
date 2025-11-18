@@ -150,11 +150,11 @@ namespace XRC.Toolkit.Core
         // Manual Selection Methods (for Input Action mode)
 
         /// <summary>
-        /// Start the edit tool and provide the edit object based on the recently selected interactable.
-        /// Implements correct ordering: snap-back → set editObject → fire events → StartRun()
+        /// Enters edit mode and provides the edit object based on the recently selected interactable.
+        /// Implements correct ordering: snap-back → set editObject → fire events → EnterEditMode()
         /// This ensures handles are created at the correct snap-back position.
         /// </summary>
-        public void StartRun()
+        public void EnterEditMode()
         {
             m_IsRunning = true;
 
@@ -195,10 +195,10 @@ namespace XRC.Toolkit.Core
                     grabInteractable.enabled = false;
                 }
 
-                // Start edit tool if configured
+                // Enter edit mode if configured
                 if (m_EditTool != null && m_StartEditOnSet)
                 {
-                    m_EditTool.StartRun();
+                    m_EditTool.EnterEditMode();
                 }
             }
             else
@@ -207,15 +207,15 @@ namespace XRC.Toolkit.Core
             }
         }
 
-        public void StopRun()
+        public void ExitEditMode()
         {
             m_IsRunning = false;
 
-            // Stop edit tool FIRST (even if we don't have a current object)
+            // Exit edit mode FIRST (even if we don't have a current object)
             // This handles cases where tool auto-started with pre-assigned object
-            if (m_EditTool != null && m_EditTool.isRunning)
+            if (m_EditTool != null && m_EditTool.isInEditMode)
             {
-                m_EditTool.StopRun();
+                m_EditTool.ExitEditMode();
             }
 
             // Then handle current object cleanup
@@ -227,15 +227,15 @@ namespace XRC.Toolkit.Core
                 grabInteractable.enabled = true;
             }
         }
-        public void ToggleRun()
+        public void ToggleEditMode()
         {
             if (m_IsRunning)
             {
-                StopRun();
+                ExitEditMode();
             }
             else
             {
-                StartRun();
+                EnterEditMode();
             }
         }
     }
