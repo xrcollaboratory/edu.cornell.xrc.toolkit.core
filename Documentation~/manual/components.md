@@ -13,6 +13,28 @@ Provides object selection management for editing operations. Tracks grabbed obje
 | **Start Edit On Set** | *No description provided* |
 | **Snap Back On Edit Mode** | *No description provided* |
 
+## Activate On Select
+
+*No summary provided*
+
+| Property | Description |
+|----------|-------------|
+| **Interactor** | *No description provided* |
+| **Activated Object** | *No description provided* |
+
+## Attach At Runtime
+
+*No summary provided*
+
+| Property | Description |
+|----------|-------------|
+| **Parent Object** | *No description provided* |
+| **Child Object** | *No description provided* |
+| **Local Position** | *No description provided* |
+| **Local Rotation** | *No description provided* |
+| **Local Scale** | *No description provided* |
+| **Is Active On Start** | *No description provided* |
+
 ## Toggle Objects
 
 Simple script for toggling game objects based on user input. Used for enabling and disabling UIs etc.
