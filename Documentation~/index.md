@@ -10,14 +10,14 @@ A collection of starter assets and core utility scripts used across XRC Toolkit 
 
 * Name: edu.cornell.xrc.toolkit.core
 * Display name: XRC Core
-* Version: 0.2.1
+* Version: 0.2.2
 * [Git URL](https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git)
 
 ### Requirements
 
 This version of the XRC Core package is compatible with the following versions of the Unity Editor:
 
-* 6000.1 and later
+* 6000.2 and later
 
 ### Dependencies
 
