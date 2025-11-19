@@ -27,21 +27,49 @@ namespace XRC.Toolkit.Core
     public class EditObjectProvider : MonoBehaviour {
         // Serialized Fields
 
+        /// <summary>
+        /// The interactor that will grab objects for editing.
+        /// </summary>
+        /// <remarks>
+        /// When this interactor grabs an object, the system will track its initial position for snap-back functionality.
+        /// This is typically the hand or controller interactor that the user uses to select objects in the scene.
+        /// </remarks>
         [Header("Interactor Reference")]
         [SerializeField]
         [Tooltip("The interactor that will grab objects for editing. When this interactor grabs an object, the system will track its initial position for snap-back functionality.")]
         private XRBaseInteractor m_Interactor;
 
+        /// <summary>
+        /// The GameObject containing an IEditTool component that will handle edit operations.
+        /// </summary>
+        /// <remarks>
+        /// If not assigned, the system will look for an IEditTool component on this same GameObject.
+        /// Examples include ScaleLogic, ColorLogic, or any custom IEditTool implementation.
+        /// </remarks>
         [Header("Edit Tool Reference")]
         [SerializeField]
         [Tooltip("The GameObject containing an IEditTool component that will handle edit operations. If not assigned, the system will look for an IEditTool component on this same GameObject.")]
         private GameObject m_EditToolObject;
 
+        /// <summary>
+        /// Whether to automatically start the edit tool when an object is set.
+        /// </summary>
+        /// <remarks>
+        /// If true, automatically enters edit mode when an object is selected.
+        /// If false, user must manually call EnterEditMode() on the edit tool.
+        /// </remarks>
         [Header("Selection Behavior")]
         [SerializeField]
         [Tooltip("If true, automatically enters edit mode when an object is selected. If false, user must manually call StartRun on the edit tool.")]
         private bool m_StartEditOnSet = true;
 
+        /// <summary>
+        /// Whether to automatically restore objects to their grab position when entering edit mode.
+        /// </summary>
+        /// <remarks>
+        /// When enabled, objects will snap back to the position/rotation/scale they had when first grabbed.
+        /// This ensures edit handles appear at the correct initial position before user transformations.
+        /// </remarks>
         [Header("Snap-Back Settings")]
         [SerializeField]
         [Tooltip("Whether to automatically restore objects to their grab position when entering edit mode.")]
@@ -62,7 +90,22 @@ namespace XRC.Toolkit.Core
 
         // Public Properties
 
+        /// <summary>
+        /// Gets the GameObject currently being edited, or null if no object is selected.
+        /// </summary>
+        /// <remarks>
+        /// This property is set when <see cref="EnterEditMode"/> is called successfully.
+        /// It remains set until <see cref="ExitEditMode"/> is called or the object is destroyed.
+        /// </remarks>
         public GameObject currentEditObject => m_CurrentEditObject;
+
+        /// <summary>
+        /// Gets whether the EditObjectProvider is currently in edit mode.
+        /// </summary>
+        /// <remarks>
+        /// This is true between <see cref="EnterEditMode"/> and <see cref="ExitEditMode"/> calls.
+        /// It automatically becomes false if the current edit object is destroyed.
+        /// </remarks>
         public bool isRunning => m_IsRunning;
 
         // Unity Lifecycle
@@ -147,13 +190,30 @@ namespace XRC.Toolkit.Core
             }
         }
 
-        // Manual Selection Methods (for Input Action mode)
+        // Public Methods (Manual Edit Mode Control)
 
         /// <summary>
-        /// Enters edit mode and provides the edit object based on the recently selected interactable.
-        /// Implements correct ordering: snap-back → set editObject → fire events → EnterEditMode()
-        /// This ensures handles are created at the correct snap-back position.
+        /// Enters edit mode for the currently grabbed object.
         /// </summary>
+        /// <remarks>
+        /// <para>
+        /// This method should be called when the user activates edit mode via an input action.
+        /// It retrieves the most recently grabbed object from the assigned interactor and prepares it for editing.
+        /// </para>
+        /// <para>
+        /// The method follows a specific execution order to ensure correct behavior:
+        /// 1. Applies snap-back transformation (restores object to grab position)
+        /// 2. Sets the edit object reference on the IEditTool
+        /// 3. Fires the OnEditObjectChanging event (creates edit handles at correct position)
+        /// 4. Disables grab interaction on the object
+        /// 5. Calls EnterEditMode on the IEditTool (if m_StartEditOnSet is true)
+        /// </para>
+        /// <para>
+        /// If no object is currently grabbed, the method exits early and sets isRunning to false.
+        /// </para>
+        /// </remarks>
+        /// <seealso cref="ExitEditMode"/>
+        /// <seealso cref="ToggleEditMode"/>
         public void EnterEditMode()
         {
             m_IsRunning = true;
@@ -207,6 +267,24 @@ namespace XRC.Toolkit.Core
             }
         }
 
+        /// <summary>
+        /// Exits edit mode and cleans up the current edit state.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// This method should be called when the user deactivates edit mode via an input action.
+        /// It performs cleanup operations in the following order:
+        /// 1. Calls ExitEditMode on the IEditTool (if currently in edit mode)
+        /// 2. Re-enables grab interaction on the current edit object
+        /// 3. Sets isRunning to false
+        /// </para>
+        /// <para>
+        /// The method is safe to call even if there is no current edit object.
+        /// It will still exit the IEditTool if it was running with a pre-assigned object.
+        /// </para>
+        /// </remarks>
+        /// <seealso cref="EnterEditMode"/>
+        /// <seealso cref="ToggleEditMode"/>
         public void ExitEditMode()
         {
             m_IsRunning = false;
@@ -227,6 +305,23 @@ namespace XRC.Toolkit.Core
                 grabInteractable.enabled = true;
             }
         }
+
+        /// <summary>
+        /// Toggles between edit mode and normal mode.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// This is a convenience method that calls either <see cref="EnterEditMode"/> or
+        /// <see cref="ExitEditMode"/> based on the current <see cref="isRunning"/> state.
+        /// </para>
+        /// <para>
+        /// This method is typically bound to a single input action for users who prefer
+        /// toggle-style controls (one button to turn edit mode on/off) rather than separate
+        /// enter and exit actions.
+        /// </para>
+        /// </remarks>
+        /// <seealso cref="EnterEditMode"/>
+        /// <seealso cref="ExitEditMode"/>
         public void ToggleEditMode()
         {
             if (m_IsRunning)
