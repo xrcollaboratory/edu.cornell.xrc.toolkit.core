@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.3.0] - 2025-12-01
+
+### Added
+- Added world space UI Toolkit capabilities.
+- Added new prefabs: Line Visual, UI Near-Far Interactor, and UI Toolkit Configuration.
+
+### Changed
+- Changed XRC Starter Assets sample scene to use new UI Toolkit prefabs and Near-Far interactor instead of ray interactor for UI interaction.
+- Changed shader rendering queue in Grid.shader for transparency issue.
+
 ## [0.2.2] - 2025-11-18
 
 ### Added
