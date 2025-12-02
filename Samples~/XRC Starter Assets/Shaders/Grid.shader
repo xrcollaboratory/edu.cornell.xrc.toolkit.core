@@ -13,7 +13,7 @@ Shader "XR Collaboratory/Grid"
     }
     SubShader
     {
-        Tags { "RenderType"="Transparent" "Queue"="Transparent"}
+        Tags { "RenderType"="Transparent" "Queue"="Transparent-100"}
         LOD 100
         Blend SrcAlpha OneMinusSrcAlpha
         ZWrite Off
