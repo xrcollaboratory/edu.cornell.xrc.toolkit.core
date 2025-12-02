@@ -33,15 +33,44 @@ namespace XRC.Toolkit.Core
         [Header("Input Actions")]
         [SerializeField]
         [Tooltip("Optional: Toggle edit mode on/off with a single button")]
-        protected InputActionProperty m_ToggleEditModeAction;
+        private InputActionProperty m_ToggleEditModeAction;
+
+        /// <summary>
+        /// The input action for toggling edit mode on/off with a single button.
+        /// </summary>
+        public InputActionProperty toggleEditModeAction
+        {
+            get => m_ToggleEditModeAction;
+            protected set => m_ToggleEditModeAction = value;
+        }
 
         [SerializeField]
         [Tooltip("Optional: Enter edit mode (use instead of toggle for explicit control with separate buttons)")]
-        protected InputActionProperty m_EnterEditModeAction;
+        private InputActionProperty m_EnterEditModeAction;
+
+        /// <summary>
+        /// The input action for explicitly entering edit mode.
+        /// Use instead of toggle for separate enter/exit buttons.
+        /// </summary>
+        public InputActionProperty enterEditModeAction
+        {
+            get => m_EnterEditModeAction;
+            protected set => m_EnterEditModeAction = value;
+        }
 
         [SerializeField]
         [Tooltip("Optional: Exit edit mode (use instead of toggle for explicit control with separate buttons)")]
-        protected InputActionProperty m_ExitEditModeAction;
+        private InputActionProperty m_ExitEditModeAction;
+
+        /// <summary>
+        /// The input action for explicitly exiting edit mode.
+        /// Use instead of toggle for separate enter/exit buttons.
+        /// </summary>
+        public InputActionProperty exitEditModeAction
+        {
+            get => m_ExitEditModeAction;
+            protected set => m_ExitEditModeAction = value;
+        }
 
         private EditObjectProvider m_EditObjectProvider;
         private IEditTool m_EditTool;

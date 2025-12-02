@@ -28,10 +28,10 @@ namespace XRC.Toolkit.Core
         // Common Fields
 
         [SerializeField]
-        protected GameObject m_EditObject;
+        private GameObject m_EditObject;
 
-        protected bool m_IsRunning;
-        protected bool m_IsInEditMode;
+        private bool m_IsRunning;
+        private bool m_IsInEditMode;
 
         // Common Events
 
@@ -66,13 +66,23 @@ namespace XRC.Toolkit.Core
 
         /// <summary>
         /// Whether the edit tool is currently running.
+        /// Derived classes set this to true when entering edit mode and false when exiting.
         /// </summary>
-        public bool isRunning => m_IsRunning;
+        public bool isRunning
+        {
+            get => m_IsRunning;
+            protected set => m_IsRunning = value;
+        }
 
         /// <summary>
         /// Whether the edit tool is currently in edit mode.
+        /// Derived classes set this to true when entering edit mode and false when exiting.
         /// </summary>
-        public bool isInEditMode => m_IsInEditMode;
+        public bool isInEditMode
+        {
+            get => m_IsInEditMode;
+            protected set => m_IsInEditMode = value;
+        }
 
         // Unity Lifecycle
 
