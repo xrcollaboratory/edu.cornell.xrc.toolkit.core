@@ -15,7 +15,7 @@ Provides object selection management for editing operations. Tracks grabbed obje
 
 ## Attach At Runtime
 
-*No summary provided*
+Attaches a child object to a parent object at runtime with configurable local transform settings.
 
 | Property | Description |
 |----------|-------------|
