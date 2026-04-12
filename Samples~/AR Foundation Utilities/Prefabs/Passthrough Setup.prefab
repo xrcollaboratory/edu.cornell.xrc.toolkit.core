@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3037222527622582614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3505420273565860920}
+  - component: {fileID: 822399232374163236}
+  m_Layer: 0
+  m_Name: Passthrough Setup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3505420273565860920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037222527622582614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &822399232374163236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037222527622582614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4593d900a9c9a304b8fb13663af39771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XRC.Projects.A::XRC.Projects.Axis.PassthroughManager
+  m_Camera: {fileID: 0}
+  m_EnablePassthroughOnStart: 1
+  m_TogglePassthrough:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle Passthrough
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 94e8df68-4667-44a5-bc45-e2b469122ec2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 4ac63702-ffde-4d91-b4a8-9e6c45d8f96e
+        m_Path: <Keyboard>/p
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Toggle Passthrough
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 1902792676311020402, guid: 8b2ce424914347a409808d7bd05c0696, type: 3}
+  m_DisableOnPassthrough: []
