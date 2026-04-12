@@ -28,6 +28,7 @@ namespace XRC.Projects.Axis
         private bool m_IsPassthroughEnabled;
         private Color m_OriginalBackgroundColor;
         private ARCameraManager m_ARCameraManager;
+        private ARCameraBackground m_ARCameraBackground;
         private ARSession m_ARSession;
 
         void Start()
@@ -39,6 +40,7 @@ namespace XRC.Projects.Axis
 
             m_OriginalBackgroundColor = m_Camera.backgroundColor;
             m_ARCameraManager = m_Camera.gameObject.AddComponent<ARCameraManager>();
+            m_ARCameraBackground = m_Camera.gameObject.AddComponent<ARCameraBackground>();
             m_ARSession = gameObject.AddComponent<ARSession>();
 
             if (m_EnablePassthroughOnStart)
@@ -93,8 +95,7 @@ namespace XRC.Projects.Axis
         {
             m_IsPassthroughEnabled = true;
             m_Camera.backgroundColor = new Color(0, 0, 0, 0);
-            m_ARCameraManager.enabled = true;
-
+            m_ARCameraBackground.enabled = true;
 
             foreach (var obj in m_DisableOnPassthrough)
             {
@@ -108,7 +109,7 @@ namespace XRC.Projects.Axis
         private void DisablePassthrough()
         {
             m_IsPassthroughEnabled = false;
-            m_ARCameraManager.enabled = false;
+            m_ARCameraBackground.enabled = false;
             m_Camera.backgroundColor = m_OriginalBackgroundColor;
 
             foreach (var obj in m_DisableOnPassthrough)
