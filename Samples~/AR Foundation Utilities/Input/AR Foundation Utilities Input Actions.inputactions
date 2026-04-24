@@ -38,17 +38,6 @@
                     "action": "Toggle Passthrough",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "63e28261-ec17-4791-bfc4-6337a06ab449",
-                    "path": "<XRController>{LeftHand}/pinchTouched",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Toggle Passthrough",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }

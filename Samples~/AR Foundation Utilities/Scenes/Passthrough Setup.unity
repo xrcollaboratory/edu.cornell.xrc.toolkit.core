@@ -176,67 +176,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb4d4fc1d260e914bbf58e21e3a1682a, type: 3}
---- !u!1 &1424053768 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6909062315841059425, guid: 9854c6854e2c66f44a31102914428393, type: 3}
-  m_PrefabInstance: {fileID: 1696774259621593041}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1424053770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424053768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0b9921bce4eeb49bd05815b1135ac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractorSourceObject: {fileID: 1424053774}
-  m_HapticImpulsePlayer: {fileID: 0}
-  m_PlaySelectEntered: 0
-  m_SelectEnteredData:
-    m_Amplitude: 0.5
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_PlaySelectExited: 0
-  m_SelectExitedData:
-    m_Amplitude: 0.5
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_PlaySelectCanceled: 0
-  m_SelectCanceledData:
-    m_Amplitude: 0.5
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_PlayHoverEntered: 1
-  m_HoverEnteredData:
-    m_Amplitude: 0.25
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_PlayHoverExited: 0
-  m_HoverExitedData:
-    m_Amplitude: 0.25
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_PlayHoverCanceled: 0
-  m_HoverCanceledData:
-    m_Amplitude: 0.25
-    m_Duration: 0.1
-    m_Frequency: 0
-  m_AllowHoverHapticsWhileSelecting: 0
---- !u!114 &1424053774 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2479386936787895830, guid: 9854c6854e2c66f44a31102914428393, type: 3}
-  m_PrefabInstance: {fileID: 1696774259621593041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424053768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1856821918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,6 +249,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b6b5d8b25c75a49bc7e6352f643b12, type: 3}
+--- !u!1 &1856821919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5295465283934045603, guid: f6b6b5d8b25c75a49bc7e6352f643b12, type: 3}
+  m_PrefabInstance: {fileID: 1856821918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1920291551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,6 +262,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 822399232374163236, guid: 3465974d0a5c39f46b2dca3b3f669560, type: 3}
+      propertyPath: m_DisableOnPassthrough.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 822399232374163236, guid: 3465974d0a5c39f46b2dca3b3f669560, type: 3}
+      propertyPath: 'm_DisableOnPassthrough.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1856821919}
     - target: {fileID: 3037222527622582614, guid: 3465974d0a5c39f46b2dca3b3f669560, type: 3}
       propertyPath: m_Name
       value: Passthrough Setup
@@ -451,10 +403,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 7473905921479294855, guid: 9854c6854e2c66f44a31102914428393, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6909062315841059425, guid: 9854c6854e2c66f44a31102914428393, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1424053770}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9854c6854e2c66f44a31102914428393, type: 3}
 --- !u!4 &7696548426158909433 stripped
 Transform:
