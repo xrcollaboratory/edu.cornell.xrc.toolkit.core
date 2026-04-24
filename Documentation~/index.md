@@ -10,21 +10,21 @@ A collection of starter assets and core utility scripts used across XRC Toolkit 
 
 * Name: edu.cornell.xrc.toolkit.core
 * Display name: XRC Core
-* Version: 0.3.0
+* Version: 0.4.0
 * [Git URL](https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git)
 
 ### Requirements
 
 This version of the XRC Core package is compatible with the following versions of the Unity Editor:
 
-* 6000.2 and later
+* 6000.3 and later
 
 ### Dependencies
 
 The XRC Core package has the following dependencies which are automatically added to your project when installing:
 
 * com.unity.inputsystem@1.14.0
-* com.unity.xr.interaction.toolkit@3.2.0
+* com.unity.xr.interaction.toolkit@3.4.0
 
 If the package has additional Git dependencies listed in the package description, such as XRC Toolkit packages, then they need to be installed manually via the Unity Package Manager.
 

@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "AR Foundation Utilities Input Actions",
+    "maps": [
+        {
+            "name": "AR Foundation Utilities",
+            "id": "87c50379-3a9e-4d15-a616-abd2b9c8c6a8",
+            "actions": [
+                {
+                    "name": "Toggle Passthrough",
+                    "type": "Button",
+                    "id": "e5d8dad6-aa7f-487a-a6ac-c90dca6333b1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9bc57ac5-c572-46cb-b6cb-7953ea461a1e",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle Passthrough",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8b96f08-7356-48eb-a2b6-94499a01c423",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle Passthrough",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

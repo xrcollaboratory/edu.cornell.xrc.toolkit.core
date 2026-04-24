@@ -1,12 +1,12 @@
 {
 	"name": "edu.cornell.xrc.toolkit.core",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"displayName": "XRC Core",
 	"description": "A collection of starter assets and core utility scripts used across XRC Toolkit packages.",
-	"unity": "6000.2",
+	"unity": "6000.3",
 	"dependencies": {
 		"com.unity.inputsystem": "1.14.0",
-		"com.unity.xr.interaction.toolkit": "3.2.0"
+		"com.unity.xr.interaction.toolkit": "3.4.0"
 	},
 	"documentationUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/",
 	"changelogUrl": "https://xrcollaboratory.github.io/edu.cornell.xrc.toolkit.core/changelog/CHANGELOG.html",
@@ -31,6 +31,16 @@
 			"displayName": "XRC Starter Assets",
 			"description": "A simple scene showcasing the use of the XRC Starter Assets. Useful items such as scenes and prefabs can be found in this sample.",
 			"path": "Samples~/XRC Starter Assets"
+		},
+		{
+			"displayName": "AR Foundation Utilities",
+			"description": "Utilities for AR Foundation including input actions, prefabs, scenes, and scripts. This can be used to cleanly add AR Foundation Passthrough capabilities to a scene.",
+			"path": "Samples~/AR Foundation Utilities"
+		},
+		{
+			"displayName": "XR Hands Utilities",
+			"description": "Utilities for XR Hands including prefabs, scenes, and scripts. This can be used to cleanly add XR Hands to a scene.",
+			"path": "Samples~/XR Hands Utilities"
 		}
 	]
 }

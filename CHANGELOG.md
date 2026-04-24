@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.4.0] - 2026-04-12
+
+### Added
+- Added AR Foundation Utilities sample with passthrough setup script, prefab, scene, and input actions.
+- Added XR Hands Utilities sample with hand tracking setup script, prefab, and scene.
+
+### Changed
+- Refactored Base Rig prefab to include near/far interactors, poke interactor, and input modality.
+- Updated Unity minimum version to 6000.3.
+- Updated XR Interaction Toolkit dependency to 3.4.0.
+
 ## [0.3.0] - 2025-12-01
 
 ### Added
