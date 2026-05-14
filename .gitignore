@@ -6,6 +6,9 @@
 **/XRCIgnore/
 **/XRCIgnore.meta
 
+# Local Claude Code config (not shared)
+.claude/
+
 ##########################
 ### For Unity packages ###
 ##########################
