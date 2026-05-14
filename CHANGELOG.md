@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.4.3] - 2026-05-13
+
+### Fixed
+- Scene Loader spawning a duplicate instance when a scene containing the loader was loaded while a persistent copy already existed. Adds a singleton guard that destroys the duplicate's persistent root on Awake.
+
 ## [0.4.2] - 2026-05-13
 
 ### Added

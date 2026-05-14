@@ -37,6 +37,8 @@ namespace XRC.Toolkit.Core
         [Tooltip("GameObject to mark as DontDestroyOnLoad. Leave empty to use this transform's root, which is the typical setup when the loader sits under a shared UI parent that owns the Navigation Rail.")]
         private GameObject m_PersistentRoot;
 
+        private static SceneLoaderController s_Instance;
+
         private UIDocument m_Document;
         private VisualElement m_SceneList;
         private readonly Dictionary<string, Button> m_Buttons = new();
@@ -48,11 +50,24 @@ namespace XRC.Toolkit.Core
 
         private void Awake()
         {
-            if (!m_PersistAcrossScenes)
-                return;
-
             var target = m_PersistentRoot != null ? m_PersistentRoot : transform.root.gameObject;
-            DontDestroyOnLoad(target);
+
+            if (s_Instance != null && s_Instance != this)
+            {
+                Destroy(target);
+                return;
+            }
+
+            s_Instance = this;
+
+            if (m_PersistAcrossScenes)
+                DontDestroyOnLoad(target);
+        }
+
+        private void OnDestroy()
+        {
+            if (s_Instance == this)
+                s_Instance = null;
         }
 
         private void OnEnable()
