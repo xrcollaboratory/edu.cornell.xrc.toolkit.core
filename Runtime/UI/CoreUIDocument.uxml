@@ -1,0 +1,30 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/edu.cornell.xrc.toolkit.core/Runtime/UI/CoreUIStyle.uss?fileID=7433441132597879392&amp;guid=4b927b809c513754292e0829c4e928af&amp;type=3#CoreUIStyle"/>
+    <engine:VisualElement name="SceneInfoRoot" class="scene-info-root" style="background-color: rgba(164, 163, 5, 0.21);">
+        <engine:Label name="Title" text="Scene Info" class="scene-info-title"/>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Scene" class="scene-info-key"/>
+            <engine:Label name="SceneName" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Product" class="scene-info-key"/>
+            <engine:Label name="ProductName" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Company" class="scene-info-key"/>
+            <engine:Label name="CompanyName" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Package" class="scene-info-key"/>
+            <engine:Label name="Identifier" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Version" class="scene-info-key"/>
+            <engine:Label name="Version" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+        <engine:VisualElement class="scene-info-row">
+            <engine:Label text="Unity" class="scene-info-key"/>
+            <engine:Label name="UnityVersion" text="—" class="scene-info-value"/>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

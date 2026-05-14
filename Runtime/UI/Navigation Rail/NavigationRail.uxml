@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/edu.cornell.xrc.toolkit.core/Runtime/UI/Navigation%20Rail/NavigationRail.uss?fileID=7433441132597879392&amp;guid=9bbf497ee88943179db11f8ece64b9b8&amp;type=3#NavigationRail"/>
+    <engine:VisualElement name="NavDocumentRoot" class="navigation-document-root" style="min-width: 100%;">
+        <engine:VisualElement name="Rail" class="navigation-rail navigation-root" style="border-top-left-radius: 8px; width: 100%; align-items: stretch; min-height: auto; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; min-width: auto; align-content: flex-start;">
+            <engine:VisualElement name="RailItems" class="navigation-rail-items" style="min-width: auto; min-height: auto; width: 100%; max-width: none; max-height: none; align-content: center; justify-content: flex-start; align-items: center; top: auto; height: 100%; align-self: center;"/>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

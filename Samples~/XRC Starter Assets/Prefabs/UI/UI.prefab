@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6629178948454015440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5648080503775687982}
+  - component: {fileID: 4402844640289618509}
+  - component: {fileID: 6888195616931882290}
+  - component: {fileID: 8577405979013217908}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5648080503775687982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629178948454015440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8589394350852664946}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4402844640289618509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629178948454015440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1088b238fc3456ca53847270a096702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XRC.Toolkit.Core::XRC.Toolkit.Core.Legacy.ControllerRelativeFollowTransform
+  m_FollowTarget: {fileID: 0}
+  m_AutoFindLeftController: 1
+  m_FollowOffset: {x: 0.12, y: 0.02, z: 0}
+  m_RotationOffsetEuler: {x: 45, y: 0, z: 0}
+--- !u!114 &6888195616931882290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629178948454015440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558f44ab298671844a280fa11ab35816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XRC.Toolkit.Core::XRC.Toolkit.Core.NavigationVisibilityToggle
+  m_ToggleAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 71ea069b-4f53-472c-9c0e-44563b06e179
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -5607746439276142674, guid: b4374986a01576f4abe934b7c6f2b469, type: 3}
+  m_Controller: {fileID: 8589394350852664944}
+  m_StartVisible: 0
+--- !u!114 &8577405979013217908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629178948454015440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31220a775d752944dbe757d837c874a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XRC.Toolkit.Core::XRC.Toolkit.Core.FollowScale
+  m_Source: {fileID: 0}
+--- !u!1001 &8589394350852565203
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5648080503775687982}
+    m_Modifications:
+    - target: {fileID: 100000, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_Name
+      value: Navigation Rail
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_Pivot
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_PanelSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: e819052aeb8d146499e2f58576ed3668, type: 2}
+    - target: {fileID: 100002, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_WorldSpaceWidth
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_PivotReferenceSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_WorldSpaceSizeMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100003, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_PanelXOffset
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100003, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_Panels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100003, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+      propertyPath: m_PanelPositionOffset.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+--- !u!114 &8589394350852664944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 100003, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+  m_PrefabInstance: {fileID: 8589394350852565203}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcfbc541f354d2eb9537d4352f71c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XRC.Toolkit.Core::XRC.Toolkit.Core.NavigationRailController
+--- !u!4 &8589394350852664946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 100001, guid: b279b3fa9d6548fca09467fb0b39e675, type: 3}
+  m_PrefabInstance: {fileID: 8589394350852565203}
+  m_PrefabAsset: {fileID: 0}
