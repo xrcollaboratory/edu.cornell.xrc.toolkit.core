@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.4.2] - 2026-05-13
+
+### Added
+- Scene Loader UI (UI Toolkit) with serialized scene list and DontDestroyOnLoad persistence, addable as a Navigation Rail panel. Closes #5.
+
 ## [0.4.1] - 2026-05-13
 
 ### Added

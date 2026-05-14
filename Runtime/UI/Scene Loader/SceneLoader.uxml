@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/edu.cornell.xrc.toolkit.core/Runtime/UI/Scene%20Loader/SceneLoader.uss?fileID=7433441132597879392&amp;guid=daa249be9bc84b3599a5c7661a5ebca0&amp;type=3#SceneLoader"/>
+    <engine:VisualElement name="SceneLoaderRoot" class="scene-loader-root">
+        <engine:Label name="Title" text="Scenes" class="scene-loader-title"/>
+        <engine:VisualElement name="SceneList" class="scene-loader-list"/>
+    </engine:VisualElement>
+</engine:UXML>
