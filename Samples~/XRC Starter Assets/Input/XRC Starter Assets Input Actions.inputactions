@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "name": "XRC Starter Assets Input Actions",
+    "maps": [
+        {
+            "name": "XRC Starter Assets Input Actions",
+            "id": "58516d21-67e1-4402-b51a-8fe6875584f9",
+            "actions": [
+                {
+                    "name": "Toggle UI",
+                    "type": "Button",
+                    "id": "bf5d9666-e062-463b-ba02-ea41e3fad40b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Kiosk Mode",
+                    "type": "Button",
+                    "id": "2cedb40f-789b-4532-9120-75e9f4d1642d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1c91e060-c285-47f9-98a3-d5078484e12e",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle UI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fdd2fd0-aa54-4871-a22d-183869993bd7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle UI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1fc2816b-b13d-46eb-8492-a6b56a6714ef",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle Kiosk Mode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
