@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- Headers should be listed in this order: Added, Changed, Deprecated, Removed, Fixed, Security -->
 
+## [0.4.1] - 2026-05-13
+
+### Added
+- Reusable Core UI and Navigation Rail (UI Toolkit), gestural float interaction, runtime utilities (FollowScale, FadingWorldIcon, KioskModeManager, IPrefabPublisher, SpriteOverlay shader), Hands+Poke starter scene, and AR Foundation MarkersSetup.
+
 ## [0.4.0] - 2026-04-12
 
 ### Added
