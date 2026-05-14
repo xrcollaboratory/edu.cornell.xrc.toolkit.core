@@ -10,7 +10,7 @@ A collection of starter assets and core utility scripts used across XRC Toolkit 
 
 * Name: edu.cornell.xrc.toolkit.core
 * Display name: XRC Core
-* Version: 0.4.2
+* Version: 0.4.3
 * [Git URL](https://github.com/xrcollaboratory/edu.cornell.xrc.toolkit.core.git)
 
 ### Requirements
